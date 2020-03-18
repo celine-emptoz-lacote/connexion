@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'inscription</title>
+    <link rel="stylesheet" href="FontAwesome/fontawesome.min.css">
+    <link rel="stylesheet" href="FontAwesome/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body class="register">
+    <header>
+        <h1 class="registerTittle"><i class="fas fa-user-edit logo2"></i></h1>
+    </header>
+
+    <main>
+
+        <form action="connexion.html" class="registerForm">
+
+            <fieldset>
+                <legend>Création de compte</legend>
+
+                <div class="picto">
+                    <label for="speudo"><i class="fas fa-user"></i></label>
+                    <input type="text" placeholder=" Choississez un speudo" id="speudo" name="speudo" required>
+                </div>
+                
+                <div class="picto">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" name="password" id="password" required placeholder=" Votre mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minimum 8 lettres avec au moins une majuscule et un chiffre">
+                </div>
+
+                <div class="picto">
+                    <label for="passwordVerif"><i class="fas fa-unlock-alt"></i></label>
+                    <input type="password" name="passwordVerif" id="passwordVerif" required placeholder=" Vérification du mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minimum 8 lettres avec au moins une majuscule et un chiffre">
+                </div>
+                
+                
+
+                <p class="registerP">Votre identité</p>
+
+                <div class="identite">
+                    <div class="btnRadio">
+                        <input type="radio" id="femme" name="femme" checked>
+                        <label for="femme" >Madame</label>
+                    </div>
+                    <div class="btnRadio">
+                        <input type="radio" id="homme" name="homme" >
+                        <label for="homme" >Monsieur</label>
+                    </div>
+                </div>
+                
+                <div class="registerName">
+                    <div class="name">
+                        <label for="nom"><i class="fas fa-id-card-alt"></i></label>
+                        <input type="text" placeholder=" Votre nom" id="nom" name="nom" required>
+                    </div>
+    
+                    <div class="name">
+                        <label for="prenom"><i class="far fa-id-badge"></i></label>
+                        <input type="text" id="prenom" placeholder=" Votre prénom" name="prenom" required>
+                    </div>
+                </div>
+                
+                <div class="mail">
+                    <label for="mail"><i class="fas fa-envelope enveloppe"></i></label>
+                    <input type="email" name="mail" required id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder=" Votre mail">
+                </div>
+                
+                <div class="coordonnées">
+                    <div class="DateDeNaissance">
+                        <label for="DateDeNaissance"><i class="fas fa-birthday-cake"></i></label>
+                        <input type="date" id="DateDeNaissance" title=" Votre date de naissance">
+                    </div>
+                    
+                   
+                   
+                    <div class="registerTel">
+                        <label for="telephone"><i class="fas fa-phone-square-alt"></i></label>
+                        <input type="number" id="telephone" name="telephone" placeholder=" Votre numéro de télèphone">
+                    </div>
+                </div>
+                
+              
+
+                <p class="registerP">Vos centre d'interets</p>
+                <div class="registerHobbies">
+                    <div class="list1">
+                        <label for="lecture" class="registerLabel">La lecture</label>
+                        <input type="checkbox" name="lecture" id="lecture">
+                        <label for="cinema" class="registerLabel">Le cinéma</label>
+                        <input type="checkbox" name="cinema" id="cinema">
+                        <label for="sport" class="registerLabel">Le sport</label>
+                        <input type="checkbox" name="sport" id="sport">
+                    </div>
+    
+                    <div class="list2">
+                        <label for="animaux" class="registerLabel">Les animaux</label>
+                        <input type="checkbox" name="animaux" id="animaux">
+                        <label for="jeuxvideos" class="registerLabel">Les jeux-videos</label>
+                        <input type="checkbox" name="jeuxvideos" id="jeuxvideos">
+                        <label for="technologies" class="registerLabel">Les nouvelles technologies</label>
+                        <input type="checkbox" name="technologies" id="technologies">
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="registerEtude">
+                    <label for="etudes" class="etudes">Niveau d'étude</label>
+                    <select name="etude" id="etudes" required>
+                        <option value=""> Choisir votre niveau d'étude</option>
+                        <option value="sans">Pas de diplome</option>
+                        <option value="brevet">Brevet des colléges</option>
+                        <option value="bac">BAC</option>
+                        <option value="bac2"> BAC +2</option>
+                     
+                    </select>
+                </div>
+
+                
+
+                <label for="presentation" class="textarea"> Parlez nous un peu de vous :</label>
+                <textarea name="presentation" id="presentation" cols="30" rows="10"></textarea>
+
+                <div class="btn">
+                    <input class="button" type="submit" >
+                    <input type="reset">
+                </div>
+
+                <a class="back" href="connexion.html">Retour</a>
+               
+            </fieldset>
+        </form>
+
+        
+
+    </main>
+
+    
+</body>
+</html>
